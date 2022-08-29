@@ -19,7 +19,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!4 &2685705423253822111
 Transform:
@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upForce: 10
   sideForce: 1
+  lifeCycle: 3
 --- !u!54 &7983181397567409775
 Rigidbody:
   m_ObjectHideFlags: 0
