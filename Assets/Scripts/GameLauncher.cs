@@ -13,5 +13,10 @@ public class GameLauncher : MonoBehaviour
         }
     }
 
-    
+    private void OnDestroy()
+    {
+        Destroy(AudioManager.Instance.gameObject);
+    }
+
+
 }
