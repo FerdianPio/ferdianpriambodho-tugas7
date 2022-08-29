@@ -18,14 +18,15 @@ public class MenuLauncher : MonoBehaviour
     }
     private void OnWithAudioButtonClicked()
         {
-            
             AudioManager.Instance.isAudioEnabled = true;
+            AudioManager.Instance.UnloadUnused();
             SceneManager.LoadScene("Game");
         }
         private void OnWithoutAudioButtonClicked()
         {
             
             AudioManager.Instance.isAudioEnabled = false;
+            AudioManager.Instance.UnloadAll();
             SceneManager.LoadScene("Game");
         }
 }
